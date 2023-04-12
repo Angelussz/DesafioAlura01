@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
-      <section class="logo"></section>
+      <section class="logo">
+        <img src="./images/alura.svg" alt="Alura Logo" />
+      </section>
       <section class="input-text">
+        
         <form>
           <label for="input-text">Ingrese el texto aqui</label>
-          <textarea rows="4" cols="50" id="input-text"></textarea>
-          <p></p>
+          <input type="text" id="input-text"></input>
+          <p>Solo letras minúsculas y acentos</p>
           <button type="submit" id="encriptar">Encriptar</button>
           <button type="submit" id="desencriptar">Desencriptar</button>
         </form>
       </section>
       <section class="output-text">
-        <textarea rows="4" cols="50" id="output-text"></textarea>
+        <div class="output-text__inicio">
+          <div class="output-text__texto">
+            <p>
+              Ningún mensaje fue encontrado
+            </p>
+            <p>
+              Ingrese el texto que desees encriptar o desencriptar
+            </p>
+          </div>
+        </div>
         <button type="button" id="copiar">Copiar</button>
       </section>
     </main>
