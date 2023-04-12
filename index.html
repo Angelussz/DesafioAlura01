@@ -25,23 +25,25 @@
         <form>
           <label for="input-text">Ingrese el texto aqui</label>
           <input type="text" id="input-text"></input>
-          <p>Solo letras minúsculas y acentos</p>
+          <p><img src="./images/peligro.svg" alt="warning"> Solo letras minúsculas y acentos</p>
           <button type="submit" id="encriptar">Encriptar</button>
           <button type="submit" id="desencriptar">Desencriptar</button>
         </form>
       </section>
       <section class="output-text">
-        <div class="output-text__inicio">
-          <div class="output-text__texto">
-            <p>
+        
+          <p class="output-text__texto">
+            <span>
               Ningún mensaje fue encontrado
-            </p>
-            <p>
+            </span>
+            <span>
               Ingrese el texto que desees encriptar o desencriptar
-            </p>
-          </div>
+            </span>
+          </p>
+        
+          <div class="boton">
+            <button type="button" id="copiar">Copiar</button>
         </div>
-        <button type="button" id="copiar">Copiar</button>
       </section>
     </main>
     <script src="./index.js"></script>
