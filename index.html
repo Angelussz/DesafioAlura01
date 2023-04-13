@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -21,28 +24,27 @@
         <img src="./images/alura.svg" alt="Alura Logo" />
       </section>
       <section class="input-text">
-        
         <form>
           <label for="input-text">Ingrese el texto aqui</label>
-          <input type="text" id="input-text"></input>
-          <p><img src="./images/peligro.svg" alt="warning"> Solo letras minúsculas y acentos</p>
+          <textarea id="input-text"></textarea>
+          <p id="mensaje-advertencia">
+            <img src="./images/peligro.svg" alt="warning" /> Solo letras
+            minúsculas y acentos
+          </p>
           <button type="submit" id="encriptar">Encriptar</button>
           <button type="submit" id="desencriptar">Desencriptar</button>
         </form>
       </section>
-      <section class="output-text">
-        
-          <p class="output-text__texto">
-            <span>
-              Ningún mensaje fue encontrado
-            </span>
-            <span>
-              Ingrese el texto que desees encriptar o desencriptar
-            </span>
-          </p>
-        
-          <div class="boton">
-            <button type="button" id="copiar">Copiar</button>
+      <section class="output-text" id="output-text">
+        <p id="resultado" class="ocultar"></p>
+        <img src="./images/munheco.png" alt="muñeco aviso no hay texto" class="munheco" id="munheco">
+        <p class="output-text__texto mostrar">
+          <span> Ningún mensaje fue encontrado </span>
+          <span> Ingrese el texto que desees encriptar o desencriptar </span>
+        </p>
+
+        <div class="boton ocultar" id="copiar">
+          <button type="button" class="copiar">Copiar</button>
         </div>
       </section>
     </main>
