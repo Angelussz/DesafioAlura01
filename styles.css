@@ -55,7 +55,10 @@ main {
 #encriptar:hover {
   
   background-color: #3c7bc9;
-  
+}
+
+#encriptar:hover,#desencriptar:hover,.copiar:hover{
+  cursor: pointer;
 }
 
 .output-text {
